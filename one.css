@@ -1,0 +1,35 @@
+.container {
+  background: url(download.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-1 {
+  margin: 10px;
+}
+.sign-in {
+  margin: 10px;
+}
+.vegi {
+  display: flex;
+  justify-content: center;
+  color: green;
+  font-size: 600%;
+  text-decoration: underline;
+  text-decoration-color: rgb(152, 215, 59);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+
+.box {
+  border-color: black;
+}
+.aalu {
+  border-color: black;
+}
+.dhniya {
+  font-size: 10px;
+}
