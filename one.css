@@ -4,14 +4,39 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  gap: 0.25rem;
 }
+
+.doot {
+  height: 16px;
+  width: 16px;
+  fill: black;
+  stroke: black;
+}
+.icon-button {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.25rem;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.icon-button:hover {
+  background: rgb(197, 192, 192);
+}
+
+.sign-in,
 .box-1 {
-  margin: 10px;
+  height: 1.25rem;
 }
-.sign-in {
-  margin: 10px;
-}
+
 .vegi {
   display: flex;
   justify-content: center;
@@ -24,11 +49,26 @@
 }
 
 .box {
-  border-color: black;
+  background-color: antiquewhite;
+}
+.box-0 {
+  background-color: blue;
+}
+.box2 {
+  background-color: blueviolet;
 }
 .aalu {
-  border-color: black;
+  height: 10rem;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+
+  background-color: rgb(132, 0, 255);
 }
 .dhniya {
-  font-size: 10px;
+  height: 10rem;
+  position: relative;
+  left: 20rem;
+  background-color: rgb(208, 167, 114);
+  border-color: 10px solid black;
 }
