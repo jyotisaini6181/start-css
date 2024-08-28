@@ -1,5 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* These are called "utility classes" */
+/* Search on Google about "TailwindCSS" */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .container {
-  background: url(download.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -8,19 +27,22 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 8px;
   gap: 0.25rem;
+  padding: 1rem;
 }
 
-.doot {
+.svg-icon {
   height: 16px;
   width: 16px;
   fill: black;
   stroke: black;
+  cursor: pointer;
 }
+
 .icon-button {
+  position: relative;
   height: fit-content;
   width: fit-content;
   padding: 0.25rem;
-  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,47 +50,194 @@
   border: none;
 }
 
-.icon-button:hover {
+.hamburger-menu-button {
+  margin-right: auto;
+}
+
+.hamburger-menu-button:hover {
   background: rgb(197, 192, 192);
 }
 
-.sign-in,
-.box-1 {
-  height: 1.25rem;
+.sign-in-button {
+  position: relative;
 }
 
-.vegi {
+.dropdown-menu {
+  background-color: #bebebe;
+  width: 10rem;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  display: none;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.profile-menu {
+  right: 0;
+}
+
+.hamburger-menu {
+  left: 0;
+}
+
+.sign-in-button:focus-within .dropdown-menu {
+  display: flex;
+}
+
+.hamburger-menu-button:focus-within .dropdown-menu {
+  display: flex;
+}
+
+.sign-in,
+.search-box {
+  height: 1.5rem;
+  cursor: pointer;
+  width: 30rem;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.25rem;
+  padding-inline: 0.5rem;
+}
+
+.hero-banner {
+  position: relative;
+  display: flex;
+}
+
+.hero-banner img {
+  width: 100%;
+}
+
+.hero-title {
   display: flex;
   justify-content: center;
-  color: green;
-  font-size: 600%;
+  color: rgba(0, 0, 0, 0.723);
+  font-size: 10rem;
   text-decoration: underline;
-  text-decoration-color: rgb(152, 215, 59);
+  text-decoration-color: rgb(216, 247, 169);
   text-decoration-thickness: 4px;
   text-underline-offset: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin: 0;
+  top: 20rem;
 }
 
-.box {
-  background-color: antiquewhite;
+.card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 2px 2px 8px #0000002d;
+  align-items: center;
+  border: 1px solid #c9c9c9;
+  padding: 0.35rem;
+  gap: 0.5rem;
 }
-.box-0 {
-  background-color: blue;
-}
-.box2 {
-  background-color: blueviolet;
-}
-.aalu {
-  height: 10rem;
-  position: relative;
-  top: 2rem;
-  left: 2rem;
 
-  background-color: rgb(132, 0, 255);
+.card img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
-.dhniya {
-  height: 10rem;
-  position: relative;
-  left: 20rem;
-  background-color: rgb(208, 167, 114);
-  border-color: 10px solid black;
+
+.title {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.paragraph {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  gap: 0.15rem;
+  width: 100%;
+}
+
+.tag {
+  border: 1px solid #c9c9c9;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  column-gap: 1.5rem;
+  row-gap: 5rem;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.back-to-top {
+  background-color: #bebebe;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.get-to-know {
+  background-color: #7b7979;
+  display: flex;
+
+  padding: 200px;
+}
+/* footer, h1, h2, h3, p, span, div .... All tags */
+/* #id */
+/* .class */
+/* ::before and ::after pseudo selectors */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #7b7979;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(91, 76, 76);
+  background-color: #7b7979;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.bhasa {
+  background-color: #7b7979;
+  border-color: #bebebe;
+}
+
+.countery {
+  background-color: #7b7979;
+  border-color: #bebebe;
 }
