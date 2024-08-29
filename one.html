@@ -40,13 +40,19 @@
         <img src="./user.svg" alt="Sign-In" class="svg-icon" />
         <div class="dropdown-menu profile-menu">
           <option>profile</option>
-          <option>sign-in</option>
+          <option onclick="authModal.show()">sign-in</option>
           <option>Details</option>
           <option>Help & Settings</option>
         </div>
       </button>
     </nav>
-    <dialog></dialog>
+
+    <dialog id="authModal" class="auth-modal">
+      <div class="sign-in-form">
+        Hello, world!
+        <button onclick="authModal.close()">X</button>
+      </div>
+    </dialog>
 
     <div class="hero-banner">
       <img src="img-vegi.jpg" alt="Vegetable" />
