@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #72d7bc;
+  display: grid;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4rem 1fr 1fr 4rem;
+}
+
+.item {
+  background-color: #009dff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.header,
+.footer {
+  grid-column: span 3;
+}
+
+.sidebar {
+  grid-row: span 2;
+}
+
+.content-header {
+  grid-column: span 2;
+}
+
+/* auto, grid-template-areas, minmax, clamp, spans */

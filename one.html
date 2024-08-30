@@ -49,8 +49,14 @@
 
     <dialog id="authModal" class="auth-modal">
       <div class="sign-in-form">
-        Hello, world!
-        <button onclick="authModal.close()">X</button>
+        <button class="cross" onclick="authModal.close()">X</button>
+        <div class="sign-in-index">
+          <h2>Account Details</h2>
+          <input type="text" name="" id="username" placeholder="username" />
+          <input type="text" name="" id="password" placeholder="password" />
+          <input type="text" name="" id="email" placeholder="Email" />
+          <button type="submit" class="submit">submit</button>
+        </div>
       </div>
     </dialog>
 
