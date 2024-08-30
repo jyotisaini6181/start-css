@@ -40,7 +40,7 @@
         <img src="./user.svg" alt="Sign-In" class="svg-icon" />
         <div class="dropdown-menu profile-menu">
           <option>profile</option>
-          <option onclick="authModal.show()">sign-in</option>
+          <option onclick="authModal.showModal()">sign-in</option>
           <option>Details</option>
           <option>Help & Settings</option>
         </div>
@@ -48,15 +48,13 @@
     </nav>
 
     <dialog id="authModal" class="auth-modal">
-      <div class="sign-in-form">
-        <button class="cross" onclick="authModal.close()">X</button>
-        <div class="sign-in-index">
-          <h2>Account Details</h2>
-          <input type="text" name="" id="username" placeholder="username" />
-          <input type="text" name="" id="password" placeholder="password" />
-          <input type="text" name="" id="email" placeholder="Email" />
-          <button type="submit" class="submit">submit</button>
-        </div>
+      <button class="cross" onclick="authModal.close()">X</button>
+      <div class="sign-in-index">
+        <h2>Account Details</h2>
+        <input type="text" name="" id="username" placeholder="username" />
+        <input type="text" name="" id="password" placeholder="password" />
+        <input type="text" name="" id="email" placeholder="Email" />
+        <button type="submit" class="submit">submit</button>
       </div>
     </dialog>
 
