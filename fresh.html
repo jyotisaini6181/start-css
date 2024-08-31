@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="fresh.css" />
+    <link rel="stylesheet" href="styles/fresh.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fresh</title>
   </head>
   <body>
+    <nav>
+      <button class="icon-button hamburger-menu-button">
+        <img
+          src="./hamburger-menu-icon.svg"
+          alt="Options Menu"
+          class="svg-icon"
+        />
+        <div class="dropdown-menu hamburger-menu">
+          <option>Digital content and device</option>
+          <option>Shop by Category</option>
+          <option>Programs & Features</option>
+        </div>
+      </button>
+      <div class="nav-bar">
+        <a href="one.html">Home</a>
+        <a href="">Today deals</a>
+        <a href=""> Customer Service</a>
+        <a href="">Best Seller</a>
+        <a href="">Location</a>
+      </div>
+
+      <input
+        type="search"
+        placeholder="search"
+        id="search"
+        class="search-box"
+      />
+
+      <button class="icon-button sign-in-button">
+        <img src="./user.svg" alt="Sign-In" class="svg-icon" />
+        <div class="dropdown-menu profile-menu">
+          <option>profile</option>
+          <option onclick="authModal.showModal()">sign-in</option>
+          <option>Details</option>
+          <option>Help & Settings</option>
+        </div>
+      </button>
+    </nav>
+
     <main class="card-container">
       <section class="card">
         <img src="chili.jpeg" alt="chili" />
