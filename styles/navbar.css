@@ -50,17 +50,25 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 5rem;
+  margin-inline: auto;
   font-size: 15px;
   width: fit-content;
 }
-.nav-bar > a {
+
+.nav-bar > a,
+.nav-bar > button {
   padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-.nav-bar > a:hover {
-  background-color: hsl(0, 0%, 94%);
-  border-radius: 4px;
+.nav-bar > a:hover,
+.nav-bar > button:hover {
+  background-color: #f0f0f0;
 }
 
 .svg-icon {
@@ -69,6 +77,14 @@ nav {
   fill: black;
   stroke: black;
   cursor: pointer;
+}
+
+.menu-trigger {
+  position: relative;
+}
+
+.menu-trigger:focus-within .dropdown-menu {
+  display: flex;
 }
 
 .icon-button {

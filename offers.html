@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/offers.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <button class="icon-button hamburger-menu-button">
+        <img
+          src="./hamburger-menu-icon.svg"
+          alt="Options Menu"
+          class="svg-icon"
+        />
+        <div class="dropdown-menu hamburger-menu">
+          <option>Digital content and device</option>
+          <option>Shop by Category</option>
+          <option>Programs & Features</option>
+        </div>
+      </button>
+      <div class="nav-bar">
+        <a href="fresh.html">Fresh</a>
+        <a href="offers.html">Today deals</a>
+        <a href=""> Customer Service</a>
+        <a href="">Best Seller</a>
+        <a href="">Location</a>
+      </div>
+
+      <input
+        type="search"
+        placeholder="search"
+        id="search"
+        class="search-box"
+      />
+
+      <button class="icon-button sign-in-button">
+        <img src="./user.svg" alt="Sign-In" class="svg-icon" />
+        <div class="dropdown-menu profile-menu">
+          <option>profile</option>
+          <option onclick="authModal.showModal()">sign-in</option>
+          <option>Details</option>
+          <option>Help & Settings</option>
+        </div>
+      </button>
+    </nav>
+
+    <dialog id="authModal" class="auth-modal">
+      <button class="cross" onclick="authModal.close()">X</button>
+      <div class="sign-in-index">
+        <h2>Account Details</h2>
+        <input type="text" name="" id="username" placeholder="username" />
+        <input type="text" name="" id="password" placeholder="password" />
+        <input type="text" name="" id="email" placeholder="Email" />
+        <button type="submit" class="submit">submit</button>
+      </div>
+    </dialog>
+    <main class="header">
+      <section class="hero-banner">
+        <img src="ornage.jpg" alt="orange" />
+        <div class="hero-container">
+          <h1>50-80% off</h1>
+          <a href="" class="shop-now">shop now</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
