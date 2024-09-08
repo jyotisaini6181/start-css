@@ -14,11 +14,13 @@
 }
 
 .name {
-  font-size: 20px;
+  font-size: 16px;
+  text-align: start;
 }
 
 .email {
   color: rgb(115, 115, 133);
+  text-transform: lowercase;
 }
 
 .profile-card {
