@@ -29,8 +29,8 @@
           Customer Service
           <div class="dropdown-menu">What on God's Green Earth</div>
         </button>
-        <a href="">Best Seller</a>
-        <a href="">Location</a>
+        <a href="best-seller.html">Best Seller</a>
+        <a onclick="locationModal.showModal()">Location</a>
       </div>
 
       <input
@@ -44,15 +44,26 @@
         <img src="./user.svg" alt="Sign-In" class="svg-icon" />
         <div class="dropdown-menu profile-menu">
           <option>profile</option>
-          <option onclick="authModal.showModal()">sign-in</option>
+          <option onclick="signInModal.showModal()">sign-in</option>
           <option>Details</option>
           <option>Help & Settings</option>
         </div>
       </button>
     </nav>
+    <dialog id="locationModal" class="auth-modal">
+      <div class="location-header">
+        <div class="choose">choose yor Location</div>
+        <button class="click" onclick="locationModal.close()">X</button>
+      </div>
+      <div class="location-bottom">
+        address:<input type="text" />
+        <input type="text" placeholder="email" />
+      </div>
+      <button class="done">Done</button>
+    </dialog>
 
-    <dialog id="authModal" class="auth-modal">
-      <button class="cross" onclick="authModal.close()">X</button>
+    <dialog id="signInModal" class="auth-modal">
+      <button class="cross" onclick="signInModal.close()">X</button>
       <div class="sign-in-index">
         <h2>Account Details</h2>
         <input type="text" name="" id="username" placeholder="username" />

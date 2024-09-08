@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/best-seller.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <button class="icon-button hamburger-menu-button">
+        <img
+          src="./hamburger-menu-icon.svg"
+          alt="Options Menu"
+          class="svg-icon"
+        />
+        <div class="dropdown-menu hamburger-menu">
+          <option>Digital content and device</option>
+          <option>Shop by Category</option>
+          <option>Programs & Features</option>
+        </div>
+      </button>
+      <div class="nav-bar">
+        <a href="fresh.html">Fresh</a>
+        <a href="offers.html">Today deals</a>
+        <button class="menu-trigger">
+          Customer Service
+          <div class="dropdown-menu">What on God's Green Earth</div>
+        </button>
+        <a href="best-seller.html">Best Seller</a>
+        <a href="">Location</a>
+      </div>
+
+      <input
+        type="search"
+        placeholder="search"
+        id="search"
+        class="search-box"
+      />
+
+      <button class="icon-button sign-in-button">
+        <img src="./user.svg" alt="Sign-In" class="svg-icon" />
+        <div class="dropdown-menu profile-menu">
+          <option>profile</option>
+          <option onclick="authModal.showModal()">sign-in</option>
+          <option>Details</option>
+          <option>Help & Settings</option>
+        </div>
+      </button>
+    </nav>
+
+    <dialog id="authModal" class="auth-modal">
+      <button class="cross" onclick="authModal.close()">X</button>
+      <div class="sign-in-index">
+        <h2>Account Details</h2>
+        <input type="text" name="" id="username" placeholder="username" />
+        <input type="text" name="" id="password" placeholder="password" />
+        <input type="text" name="" id="email" placeholder="Email" />
+        <button type="submit" class="submit">submit</button>
+      </div>
+    </dialog>
+    <div>vegetable best seller</div>
+    <main class="cards-container">
+      <section class="card">
+        <img src="onion.jpeg" alt="onion.jpeg" />
+        <div class="title">description</div>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          accusamus eveniet delectus dolorem nobis nesciunt itaque quis sunt
+          enim quos!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

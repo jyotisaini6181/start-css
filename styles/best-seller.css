@@ -1,0 +1,28 @@
+.card {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  padding: 10px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px #dbd9d9;
+}
+.card > img {
+  border-radius: 0.5rem;
+}
+.cards-container {
+  padding: 1rem;
+}
+
+.title,
+.card-description {
+  text-align: center;
+
+  margin: 0;
+  font-size: 14px;
+  padding: 10px;
+}
+.title {
+  font-size: 20px;
+}
