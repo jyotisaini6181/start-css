@@ -4,6 +4,7 @@
   gap: 1rem;
   border-bottom: 1px solid rgb(225, 225, 225);
 }
+
 .container > img {
   border-radius: 100%;
   outline: 3px solid rgb(38, 88, 169);
@@ -11,12 +12,15 @@
   height: 24px;
   aspect-ratio: 1;
 }
+
 .name {
   font-size: 20px;
 }
+
 .email {
   color: rgb(115, 115, 133);
 }
+
 .profile-card {
   border: 1px solid rgb(225, 225, 225);
   margin: 2rem;
@@ -24,6 +28,7 @@
   width: 18rem;
   overflow: hidden;
 }
+
 .log-out {
   display: flex;
   gap: 0.5rem;
@@ -32,9 +37,11 @@
   padding: 1rem;
   background: none;
 }
+
 .log-out:hover {
   background-color: rgb(244, 244, 244);
 }
+
 .log-out > img {
   height: 16px;
 }
