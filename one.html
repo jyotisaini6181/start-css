@@ -3,12 +3,37 @@
   <head>
     <link rel="stylesheet" href="styles/one.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website</title>
   </head>
 
   <body>
+    <template id="profile-card">
+      <div class="profile-card">
+        <div class="container">
+          <img src="profile.webp" alt="profile.webp" />
+          <div>
+            <h4 class="name" id="username">Jethal Ghada</h4>
+            <p class="email" id="email">jethal@ghadaelectronics.com</p>
+          </div>
+        </div>
+        <div class="bottom">
+          <button class="log-out" onclick="logout()">
+            <img src="logout-svgrepo-com.svg" alt="" />Log Out
+          </button>
+        </div>
+      </div>
+    </template>
+
+    <template id="unauthorized">
+      <option>profile</option>
+      <option onclick="signInModal.showModal()">sign-in</option>
+      <option>Details</option>
+      <option>Help & Settings</option>
+    </template>
+
     <nav>
       <button class="icon-button hamburger-menu-button">
         <img
@@ -42,12 +67,7 @@
 
       <button class="icon-button sign-in-button">
         <img src="./user.svg" alt="Sign-In" class="svg-icon" />
-        <div class="dropdown-menu profile-menu">
-          <option>profile</option>
-          <option onclick="signInModal.showModal()">sign-in</option>
-          <option>Details</option>
-          <option>Help & Settings</option>
-        </div>
+        <div class="dropdown-menu profile-menu" id="profile-menu"></div>
       </button>
     </nav>
     <dialog id="locationModal" class="auth-modal">
@@ -66,10 +86,10 @@
       <button class="cross" onclick="signInModal.close()">X</button>
       <div class="sign-in-index">
         <h2>Account Details</h2>
-        <input type="text" name="" id="username" placeholder="username" />
-        <input type="text" name="" id="password" placeholder="password" />
-        <input type="text" name="" id="email" placeholder="Email" />
-        <button type="submit" class="submit">submit</button>
+        <input type="text" id="username-input" placeholder="Username" />
+        <input type="email" id="email-input" placeholder="Email" />
+        <input type="password" id="password-input" placeholder="Password" />
+        <button class="submit" onclick="login()">Submit</button>
       </div>
     </dialog>
 
@@ -266,5 +286,6 @@
       </select>
       <button class="countery">India</button>
     </div>
+    <script src="./profile.js"></script>
   </body>
 </html>
